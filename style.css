@@ -38,6 +38,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+    }
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -53,8 +59,18 @@ body {
     color: var(--color-ink);
     font-family: var(--font-body);
     line-height: 1.6;
+    position: relative;
     overflow-x: hidden;
     transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23272521' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'/%3E%3C/svg%3E") 2 22, auto;
+}
+
+[data-theme="dark"] body {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23EDEAE0' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'/%3E%3C/svg%3E") 2 22, auto;
+}
+
+a, button, .btn, .theme-toggle, input, textarea {
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23C1502B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z'/%3E%3C/svg%3E") 2 22, pointer !important;
 }
 
 /* Graph paper grid */
@@ -422,6 +438,7 @@ section {
 /* About */
 .about-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 4rem;
     align-items: center;
 }
@@ -661,24 +678,41 @@ footer {
     border-top: 3px dashed var(--color-grid);
     padding: 4rem 2rem;
     margin-top: 2rem;
-    background-color: var(--color-card);
 }
 
 .footer-content {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem;
 }
 
 .contact-links {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1rem;
     font-family: var(--font-mono);
+    font-size: 1.1rem;
+}
+
+.contact-links a {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    color: var(--color-ink);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-links a:hover {
+    color: var(--color-copper);
+}
+
+.footer-icon {
+    color: var(--color-copper);
 }
 
 .signature {
@@ -845,6 +879,84 @@ footer {
     transform: translateY(0);
 }
 
+/* Loader */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-paper);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+#loader.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.loader-logo {
+    width: 120px;
+    height: auto;
+    animation: spin-pulse 2s infinite linear;
+}
+
+@keyframes spin-pulse {
+    0% { transform: scale(1) rotate(0deg); }
+    50% { transform: scale(1.1) rotate(180deg); }
+    100% { transform: scale(1) rotate(360deg); }
+}
+
+/* Contact Section */
+.contact-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+.contact-links-card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+    padding: 4rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+}
+
+.contact-link-item {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-family: var(--font-mono);
+    font-size: 1.4rem;
+    color: var(--color-ink);
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-link-item:hover {
+    color: var(--color-copper);
+    transform: translateX(10px);
+}
+
+.contact-icon {
+    color: var(--color-copper);
+    min-width: 28px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .nav-links {
@@ -877,5 +989,16 @@ footer {
 
     .signature {
         align-items: center;
+    }
+
+    .contact-links-card {
+        padding: 2rem 1.5rem;
+        min-width: unset;
+        width: 90%;
+    }
+
+    .contact-link-item {
+        font-size: 1.1rem;
+        gap: 1rem;
     }
 }

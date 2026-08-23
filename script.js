@@ -61,3 +61,18 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+// Handle Loading Screen
+window.addEventListener('load', () => {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        // Artificial delay so the cool animation is seen even on fast local connections
+        setTimeout(() => {
+            loader.classList.add('hidden');
+            // Remove from DOM after fade out transition (0.5s)
+            setTimeout(() => {
+                loader.remove();
+            }, 500);
+        }, 1500);
+    }
+});
