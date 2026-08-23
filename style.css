@@ -901,8 +901,11 @@ footer {
 
 .loader-logo {
     width: 120px;
-    height: auto;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
     animation: spin-pulse 2s infinite linear;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
 }
 
 @keyframes spin-pulse {
