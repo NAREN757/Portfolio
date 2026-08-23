@@ -69,10 +69,11 @@ window.addEventListener('load', () => {
         // Artificial delay so the cool animation is seen even on fast local connections
         setTimeout(() => {
             loader.classList.add('hidden');
+            document.body.classList.add('site-loaded');
             // Remove from DOM after fade out transition (0.5s)
             setTimeout(() => {
                 loader.remove();
-            }, 500);
-        }, 1500);
+            }, 600);
+        }, 300);
     }
 });
