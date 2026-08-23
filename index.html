@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Narendra R Giriyappanavar | Portfolio</title>
+    <meta name="description" content="Portfolio of Narendra R Giriyappanavar, a Full-stack developer & ECE engineer.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="graph-paper"></div>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo-link">
+                <div class="logo-wrapper">
+                    <img src="Lightthemelog.png" alt="Logo" class="logo-img" id="theme-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback" style="display:none;">NG</div>
+                </div>
+                <span class="logo-name">Narendra</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#education">Resume</a></li>
+            </ul>
+            <button class="theme-toggle modern-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                <span class="toggle-track">
+                    <span class="toggle-thumb">
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+                    </span>
+                </span>
+            </button>
+        </div>
+    </nav>
+
+    <main>
+        <section id="hero" class="hero reveal">
+            <div class="hero-content">
+                <h1>Hi, I'm <span class="name-container">Narendra<svg class="underline-svg" viewBox="0 0 300 20" preserveAspectRatio="none"><path class="underline-path" d="M5,15 Q150,5 295,15" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/></svg></span></h1>
+                <h2 class="role-line">Full-stack developer &amp; ECE engineer</h2>
+                <p class="bio-short">I build responsive web applications and work on IoT systems. Passionate about solving complex problems through elegant code and solid engineering.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn btn-primary">See projects</a>
+                    <a href="mailto:narenrg07@gmail.com" class="btn btn-secondary">Say hello</a>
+                    <a href="Narendra_Resume.pdf" download class="btn btn-secondary">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 5px; vertical-align: middle;"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                        Resume
+                    </a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="sticky-note">
+                    <div class="pin"></div>
+                    <div class="torn-cap">Luffy - Do whatever you want to achieve your Dream</div>
+                    <img src="Lightthemelog.png" alt="Mascot" class="mascot-img hero-mascot" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="mascot-fallback" style="display:none;">
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                    </div>
+                </div>
+                <svg class="doodle arrow-doodle" width="100" height="100" viewBox="0 0 100 100"><path d="M10,90 Q50,90 90,10 M70,10 L90,10 L90,30" fill="none" stroke="var(--color-copper)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+        </section>
+
+        <section id="about" class="about reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="bio">
+                    <p>I am a final-year Electronics and Communication Engineering student at SGBIT, Belagavi, with a strong foundation in both software development and hardware integration. My journey bridges the gap between hardware sensors and scalable cloud applications.</p>
+                    <p>Whether I'm developing a React-based front-end, designing a REST API, or programming an ESP32 for environmental monitoring, I thrive on continuous learning and impactful engineering.</p>
+                </div>
+                <div class="stat-cards">
+                    <div class="stat-card">
+                        <span class="stat-value">8.86</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">5</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-value">1</span>
+                        <span class="stat-label">Publication</span>
+                    </div>
+                </div>
+            </div>
+            <div class="torn-divider"></div>
+        </section>
+
+        <section id="experience" class="experience reveal">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Software Development Intern</h3>
+                            <span class="timeline-date">Feb 2026 – Ongoing</span>
+                        </div>
+                        <h4 class="company">Kodnest Technologies, Bengaluru</h4>
+                        <p>Gained hands-on experience in Java, frontend, and backend development on real-world software projects.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>B.E. Electronics &amp; Communication Engineering</h3>
+                            <span class="timeline-date">Nov 2022 – Jul 2026</span>
+                        </div>
+                        <h4 class="company">S.G. Balekundri Institute of Technology, Belagavi</h4>
+                        <p>CGPA: 8.86</p>
+                    </div>
+                </div>
+            </div>
+            <div class="torn-divider"></div>
+        </section>
+
+        <section id="projects" class="projects reveal">
+            <h2 class="section-title">Projects</h2>
+            <div class="project-grid">
+                <a href="https://github.com/NAREN757/FlimBox" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="tape tape-1"></div>
+                    <h3>FilmBox</h3>
+                    <p>Responsive movie discovery platform, movie REST API, trailer streaming, personalized recommendations.</p>
+                    <div class="tags">
+                        <span>JavaScript</span><span>React.js</span><span>REST API</span>
+                    </div>
+                </a>
+                <a href="https://github.com/NAREN757/TaskMint_" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="tape tape-2"></div>
+                    <h3>TaskMint</h3>
+                    <p>Task management app with creation, editing, categorization, priority, and completion tracking.</p>
+                    <div class="tags">
+                        <span>JavaScript</span><span>React.js</span>
+                    </div>
+                </a>
+                <a href="https://github.com/NAREN757/Simon-Says-Game" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="tape tape-3"></div>
+                    <h3>Simon Says</h3>
+                    <p>Browser memory game, progressive sequences, score tracking, localStorage high scores.</p>
+                    <div class="tags">
+                        <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+                    </div>
+                </a>
+                <a href="https://github.com/NAREN757/Envi-Rover" target="_blank" rel="noopener noreferrer" class="project-card">
+                    <div class="tape tape-4"></div>
+                    <h3>LoRa-Based EnviRover</h3>
+                    <p>IoT environmental monitoring rover on ESP32, DHT22/MQ-2/LDR/ESP32-CAM sensors, LoRa transmission.</p>
+                    <div class="tags">
+                        <span>ESP32</span><span>LoRa</span><span>IoT</span>
+                    </div>
+                </a>
+            </div>
+            <div class="torn-divider"></div>
+        </section>
+
+        <section id="skills" class="skills reveal">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-col">
+                    <h3 class="marker-bg">Languages</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>JavaScript</li>
+                        <li>HTML5 / CSS3</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h3 class="marker-bg">Frameworks</h3>
+                    <ul>
+                        <li>React.js</li>
+                        <li>Node.js</li>
+                        <li>Express.js</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h3 class="marker-bg">Backend &amp; APIs</h3>
+                    <ul>
+                        <li>JDBC</li>
+                        <li>REST APIs</li>
+                        <li>MongoDB</li>
+                    </ul>
+                </div>
+                <div class="skill-col">
+                    <h3 class="marker-bg">Tools</h3>
+                    <ul>
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>Cursor</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="torn-divider"></div>
+        </section>
+
+        <section id="education" class="education reveal">
+            <h2 class="section-title">Education &amp; Notes</h2>
+            <div class="education-layout">
+                <div class="education-timeline">
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>B.E. Electronics &amp; Communication Engineering</h3>
+                                    <span class="timeline-date">2022 – 2026</span>
+                                </div>
+                                <h4 class="company">S.G. Balekundri Institute of Technology, Belagavi</h4>
+                                <p>CGPA: 8.86</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Pre-University (PCMB)</h3>
+                                    <span class="timeline-date">2018 – 2020</span>
+                                </div>
+                                <h4 class="company">KLE Independent PU College</h4>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h3>Secondary Education (10th Grade), CBSE</h3>
+                                    <span class="timeline-date">2018</span>
+                                </div>
+                                <h4 class="company">Rashtrotthana Vidya Kendra, Dharwad</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-notes">
+                    <h3 class="notes-title">Resume &amp; Extras</h3>
+                    <div class="sticky-note publication-card" style="margin-bottom: 2rem;">
+                        <div class="pin"></div>
+                        <h4>My Resume</h4>
+                        <p>View my full professional history and skills.</p>
+                        <a href="Narendra_Resume.pdf" download class="btn btn-secondary" style="margin-top: 1rem; display: inline-block;">Download PDF</a>
+                    </div>
+                    <div class="sticky-note publication-card">
+                        <div class="pin"></div>
+                        <h4>"LoRa-Based Envi-Rover"</h4>
+                        <p>Published on TechRxiv</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="contact-links">
+                <a href="mailto:narenrg07@gmail.com" aria-label="Email">
+                    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                    narenrg07@gmail.com
+                </a>
+                <a href="https://github.com/NAREN757" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    github.com/NAREN757
+                </a>
+                <a href="https://linkedin.com/in/narendra-giriyappanavar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                    <svg class="footer-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    linkedin.com/in/narendra
+                </a>
+            </div>
+            <div class="signature">
+                <div class="footer-logo-wrapper">
+                    <img src="Lightthemelog.png" alt="Signature Logo" class="footer-mascot" id="footer-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                    <div class="logo-fallback footer-fallback" style="display:none;">NG</div>
+                </div>
+                <div class="signature-text">
+                    <p>signed, Narendra</p>
+                    <p class="location-text">📍 Belagavi, Karnataka</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
